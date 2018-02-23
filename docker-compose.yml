@@ -1,0 +1,13 @@
+# Composition for rtd
+# This is explicitly a compose file, not a stack file, for
+# building the container.
+
+---
+
+version: "3.3"
+services:
+  rtd:
+    build: .
+    image: "rtd:dev"
+    ports:
+      - "8000:8000"
